@@ -1,0 +1,55 @@
+{
+  "fps": 30,
+  "lead": 0.35,
+  "total": 44.93333333333333,
+  "scenes": [
+    {
+      "start": 0,
+      "dur": 7.133333333333334,
+      "narrationStart": 0.36666666666666664,
+      "narrationDur": 6.1866666666666665
+    },
+    {
+      "start": 7.133333333333334,
+      "dur": 5.333333333333333,
+      "narrationStart": 7.5,
+      "narrationDur": 4.394666666666667
+    },
+    {
+      "start": 12.466666666666667,
+      "dur": 6.2,
+      "narrationStart": 12.833333333333334,
+      "narrationDur": 5.248
+    },
+    {
+      "start": 18.666666666666668,
+      "dur": 3.9,
+      "narrationStart": 19.033333333333335,
+      "narrationDur": 2.9546666666666668
+    },
+    {
+      "start": 22.566666666666666,
+      "dur": 5.8,
+      "narrationStart": 22.933333333333334,
+      "narrationDur": 4.864
+    },
+    {
+      "start": 28.366666666666667,
+      "dur": 5.3,
+      "narrationStart": 28.733333333333334,
+      "narrationDur": 4.362666666666667
+    },
+    {
+      "start": 33.666666666666664,
+      "dur": 4.366666666666666,
+      "narrationStart": 34.03333333333333,
+      "narrationDur": 3.4026666666666667
+    },
+    {
+      "start": 38.03333333333333,
+      "dur": 6.9,
+      "narrationStart": 38.4,
+      "narrationDur": 5.397333333333333
+    }
+  ]
+}

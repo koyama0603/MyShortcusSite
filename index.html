@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Shortcuts — ブラウザに、自分だけのデスクトップを。</title>
+<meta name="description" content="よく使うサイト、動画、メモ、自作アプリ。ぜんぶをひとつの画面に並べて、ワンクリックで。My Shortcuts は Microsoft Edge / Chrome 用の無料拡張機能です。" />
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <img src="assets/logo.png" alt="" width="28" height="28" />
+    <span>My Shortcuts</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#video">動画</a>
+    <a href="#arrange">配置</a>
+    <a href="#shortcuts">ショートカット</a>
+    <a href="#media">メディア</a>
+    <a href="#organize">整理</a>
+    <a href="#more">便利機能</a>
+  </nav>
+  <a class="nav__cta" href="#get">はじめる</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__copy reveal">
+      <p class="eyebrow">Microsoft Edge / Chrome 拡張機能</p>
+      <h1>ブラウザに、<br>自分だけのデスクトップを。</h1>
+      <p class="lede">
+        よく使うサイトも、動画も、ちょっとしたメモも。
+        ぜんぶをひとつの画面に並べて、見たいものへワンクリックで。
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#get">無料で使ってみる</a>
+        <a class="btn btn--ghost" href="#arrange">できることを見る</a>
+      </div>
+      <p class="hero__note">データはすべて手元のブラウザの中。アカウント登録もいりません。</p>
+    </div>
+    <div class="hero__shot reveal">
+      <div class="frame frame--float">
+        <img src="assets/01-overview.png" alt="My Shortcuts のデスクトップ。フォルダやサイトのアイコン、付箋が並んでいる様子" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="videosec" id="video">
+    <div class="videosec__head reveal">
+      <span class="tag tag--play" id="videoPlay" role="button" tabindex="0">動画で見る</span>
+    </div>
+    <div class="videosec__player reveal">
+      <div class="frame">
+        <video controls preload="metadata" playsinline poster="assets/01-overview.png">
+          <source src="assets/my-shortcuts-intro.mp4" type="video/mp4" />
+          お使いのブラウザは動画再生に対応していません。
+          <a href="assets/my-shortcuts-intro.mp4">動画をダウンロード</a>
+        </video>
+      </div>
+      <p class="videosec__credit">ナレーション音声: VOICEVOX：もち子さん</p>
+    </div>
+  </section>
+
+  <!-- ARRANGE -->
+  <section class="feature" id="arrange">
+    <div class="feature__text reveal">
+      <span class="tag">自由に置く</span>
+      <h2>好きな場所に、好きなだけ。</h2>
+      <p>
+        アイコンはドラッグするだけで、どこにでも。
+        使う順に並べたり、グループにまとめたり。
+        きれいに揃えたいときは、そっとマス目に吸い付きます。
+      </p>
+      <ul class="ticks">
+        <li>ドラッグして自由に配置</li>
+        <li>まとめて選んで一括で移動</li>
+        <li>広い画面を見渡せるミニマップ付き</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal">
+      <div class="frame"><img src="assets/01-overview.png" alt="アイコンと付箋が自由に並んだデスクトップ" /></div>
+    </div>
+  </section>
+
+  <!-- SHORTCUTS -->
+  <section class="feature feature--rev" id="shortcuts">
+    <div class="feature__text reveal">
+      <span class="tag">なんでも置ける</span>
+      <h2>サイトも、メモも、アプリも。</h2>
+      <p>
+        Web サイト、付箋、自作の小さなアプリ。
+        作りたいものを選んで置くだけ。
+        いま見ているページは、右クリックからそのまま送れます。
+      </p>
+      <ul class="ticks">
+        <li>Web ショートカット — お気に入りのサイトを一発で</li>
+        <li>付箋 — 思いついたことをその場にメモ</li>
+        <li>HTML アプリ — 自分で作った小さなツールも置ける</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal">
+      <div class="frame"><img src="assets/02-create-menu.png" alt="「新規作成」メニュー。フォルダ・Webショートカット・アプリ・付箋を選べる" /></div>
+    </div>
+  </section>
+
+  <!-- FOLDER -->
+  <section class="feature" id="organize">
+    <div class="feature__text reveal">
+      <span class="tag">すっきり整理</span>
+      <h2>増えてきたら、フォルダへ。</h2>
+      <p>
+        関係のあるものはフォルダにまとめて、必要なときだけ開く。
+        アイコン表示でも、一覧表示でも。
+        フォルダの中にフォルダも作れます。
+      </p>
+      <ul class="ticks">
+        <li>ドラッグで入れるだけ</li>
+        <li>アイコン / リストの切り替え</li>
+        <li>ウィンドウは移動・サイズ変更が自由自在</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal">
+      <div class="frame"><img src="assets/03-folder.png" alt="「仕事」フォルダを開いた一覧表示のウィンドウ" /></div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section class="band" id="media">
+    <div class="band__head reveal">
+      <span class="tag tag--light">そのまま楽しむ</span>
+      <h2>動画も音楽も、画面を離れずに。</h2>
+      <p>YouTube や Spotify のショートカットは、その場の小さなウィンドウで再生。タブを切り替えなくても、作業のとなりで流せます。続きはちゃんと覚えているので、また同じところから。</p>
+    </div>
+    <div class="band__shot reveal">
+      <div class="frame frame--wide"><img src="assets/11-youtube.png" alt="デスクトップ上の小さなウィンドウで動画が再生されている様子" /></div>
+    </div>
+    <div class="band__grid">
+      <div class="mini reveal">
+        <h3>続きから再生</h3>
+        <p>どこまで見たかを覚えているので、開けばその続きから。</p>
+      </div>
+      <div class="mini reveal">
+        <h3>ピクチャー イン ピクチャー</h3>
+        <p>画面ごと小窓に切り出して、いつも手前に。ほかの作業をしながらでも。</p>
+      </div>
+      <div class="mini reveal">
+        <h3>並べて表示</h3>
+        <p>いくつも開いて、好きな大きさで横に。自分だけの作業台に。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HTML APP -->
+  <section class="feature feature--rev">
+    <div class="feature__text reveal">
+      <span class="tag">自分のアプリ</span>
+      <h2>つくったものを、置いておける。</h2>
+      <p>
+        時計、電卓、ちょっとしたゲーム。
+        HTML で書いた小さなアプリを、そのままデスクトップのアイコンに。
+        ダブルクリックで、すぐ動きます。
+      </p>
+      <ul class="ticks">
+        <li>HTML ファイルを読み込むだけ</li>
+        <li>独立した画面で安全に動く</li>
+        <li>書き出して持ち運びもできる</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal">
+      <div class="frame"><img src="assets/10-htmlapp.png" alt="自作の時計アプリがウィンドウで動いている様子" /></div>
+    </div>
+  </section>
+
+  <!-- DESKTOPS -->
+  <section class="feature">
+    <div class="feature__text reveal">
+      <span class="tag">切り替える</span>
+      <h2>3つの画面を、用途で使い分け。</h2>
+      <p>
+        仕事用、趣味用、学習用。
+        画面をまるごと切り替えて、いまやることだけに集中。
+        混ざらないから、頭の中もすっきり。
+      </p>
+      <ul class="ticks">
+        <li>ワンタップで 1 / 2 / 3 を切り替え</li>
+        <li>それぞれが独立した作業スペース</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal">
+      <div class="frame"><img src="assets/09-desktop2.png" alt="2つ目のデスクトップ画面。学習用のサイトとメモが並ぶ" /></div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section class="feature feature--rev">
+    <div class="feature__text reveal">
+      <span class="tag">予定も一緒に</span>
+      <h2>カレンダーは、すぐそこに。</h2>
+      <p>
+        上のバーから、今日の予定をさっと確認。
+        ちょっとした予定はその場で書き込めます。
+        手元のカレンダーファイルから読み込むこともできます。
+      </p>
+      <ul class="ticks">
+        <li>クリックひとつで開く</li>
+        <li>予定をその場でメモ</li>
+        <li>カレンダーファイルの取り込みにも対応</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal">
+      <div class="frame"><img src="assets/04-calendar.png" alt="上部バーから開いたカレンダー。予定のある日に印が付いている" /></div>
+    </div>
+  </section>
+
+  <!-- SEARCH + QUICK -->
+  <section class="feature" id="more">
+    <div class="feature__text reveal">
+      <span class="tag">すぐ見つかる</span>
+      <h2>探す手間を、なくす。</h2>
+      <p>
+        名前を打てば、目当てのアイコンだけがすっと残ります。
+        Web をそのまま調べたいときは、検索窓から。
+        いつもの検索エンジンを選んでおけます。
+      </p>
+      <ul class="ticks">
+        <li>置いたものを名前でしぼり込み</li>
+        <li>そのまま Web 検索へ</li>
+        <li>Google や Bing など好みのエンジンを選べる</li>
+      </ul>
+    </div>
+    <div class="feature__media reveal feature__media--stack">
+      <div class="frame frame--sm"><img src="assets/05-search.png" alt="検索で「旅行」のメモだけが残った状態" /></div>
+      <div class="frame frame--sm frame--lap"><img src="assets/08-quicksearch.png" alt="クイック検索ウィンドウ。Webをそのまま検索できる" /></div>
+    </div>
+  </section>
+
+  <!-- RIGHT CLICK / DARK / BACKUP grid -->
+  <section class="cards">
+    <div class="cards__head reveal">
+      <h2>細部まで、心地よく。</h2>
+      <p>毎日のことだから、小さな使い心地まで。</p>
+    </div>
+    <div class="cards__grid">
+      <article class="card reveal">
+        <div class="card__shot"><img src="assets/06-context-menu.png" alt="アイコンの右クリックメニュー" /></div>
+        <h3>右クリックで、ぱっと操作</h3>
+        <p>開く・名前を変える・複製・別の画面へ送る。よく使う操作はその場で。</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__shot"><img src="assets/12-dark.png" alt="ダークモードのデスクトップ" /></div>
+        <h3>ライトとダーク</h3>
+        <p>時間帯や気分に合わせて、目にやさしい見た目へ。</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__shot"><img src="assets/07-settings.png" alt="設定画面。言語やバックアップの項目" /></div>
+        <h3>まるごとバックアップ</h3>
+        <p>並べたものは1つのファイルに書き出し。別のPCへもそのまま。多言語にも対応。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="privacy reveal">
+    <div class="privacy__inner">
+      <h2>あなたのものは、あなたの手元に。</h2>
+      <p>
+        並べたサイトもメモも、保存先はこのブラウザの中だけ。
+        どこかに送られることはありません。アカウントもログインも不要です。
+      </p>
+    </div>
+  </section>
+
+  <!-- GET -->
+  <section class="get" id="get">
+    <div class="get__inner reveal">
+      <img src="assets/logo.png" alt="" width="64" height="64" />
+      <h2>今日から、ブラウザがもっと自分らしく。</h2>
+      <p>Microsoft Edge と Chrome に対応。無料で使えます。</p>
+      <div class="get__actions">
+        <a class="btn btn--primary btn--lg" href="#">Coming soon!</a>
+      </div>
+      <p class="get__steps">アイコンを押すだけで、いつでもあなたのデスクトップが開きます。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__brand">
+    <img src="assets/logo.png" alt="" width="22" height="22" />
+    <span>My Shortcuts</span>
+  </div>
+  <p>ブラウザに、自分だけのデスクトップを。</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
