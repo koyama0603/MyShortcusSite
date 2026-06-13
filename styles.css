@@ -201,6 +201,42 @@ section { padding: clamp(64px, 9vw, 120px) clamp(18px, 4vw, 40px); }
 .card h3 { margin-top: 20px; }
 .card p { margin-bottom: 22px; color: var(--muted); font-size: 0.96rem; }
 
+/* ============ subhero (sub pages) ============ */
+.subhero { text-align: center; max-width: 720px; margin: 0 auto; padding-top: clamp(40px, 6vw, 80px); }
+.subhero h1 { font-size: clamp(1.9rem, 4vw, 2.9rem); margin: 0.4em 0 0.5em; }
+.subhero .lede { font-size: 1.15rem; color: var(--muted); }
+.backlink { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; }
+.backlink:hover { text-decoration: underline; }
+
+/* inline link shown inside a feature section */
+.feature__link { display: inline-flex; align-items: center; gap: 7px; margin-top: 20px; font-weight: 700; color: var(--accent); }
+.feature__link::after { content: "→"; transition: transform 0.2s ease; }
+.feature__link:hover::after { transform: translateX(4px); }
+
+/* ============ howto (始め方) ============ */
+.howto { max-width: var(--maxw); margin: 0 auto; }
+.howto__head { text-align: center; max-width: 640px; margin: 0 auto 52px; }
+.howto__head p { color: var(--muted); }
+.howto__steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(42px, 6vw, 74px); }
+.howto__step { display: grid; grid-template-columns: 0.85fr 1.45fr; gap: clamp(28px, 5vw, 62px); align-items: center; }
+.howto__num {
+  display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;
+  font-weight: 800; font-size: 1.15rem; margin-bottom: 16px; box-shadow: var(--shadow-sm);
+}
+.howto__text h3 { font-size: 1.32rem; margin-bottom: 10px; }
+.howto__text p { color: var(--muted); font-size: 1.02rem; }
+.howto__text code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em; background: var(--accent-soft); color: var(--accent);
+  padding: 2px 7px; border-radius: 6px;
+}
+.howto__shot .frame { line-height: 0; }
+
+@media (max-width: 860px) {
+  .howto__step { grid-template-columns: 1fr; gap: 22px; }
+}
+
 /* ============ privacy ============ */
 .privacy { text-align: center; }
 .privacy__inner { max-width: 640px; margin: 0 auto; }
