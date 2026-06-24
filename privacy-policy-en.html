@@ -1,30 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy - My Shortcuts</title>
-    <style>
-      body {
-        max-width: 860px;
-        margin: 40px auto;
-        padding: 0 20px;
-        color: #1f2937;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.65;
-      }
-      h1,
-      h2 {
-        line-height: 1.25;
-      }
-      a {
-        color: #0969da;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy - My Shortcuts</title>
+<meta name="description" content="Privacy Policy for My Shortcuts. Workspace data is stored locally in the user's browser." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="index.html">
+    <img src="assets/logo.png" alt="" width="28" height="28" />
+    <span>My Shortcuts</span>
+  </a>
+  <nav class="nav__links">
+    <a href="index.html">Features</a>
+    <a href="add-shortcuts.html">Add</a>
+    <a href="settings-guide.html">Settings</a>
+    <a href="menus-windows.html">Menus</a>
+    <a href="search-calendar.html">Search & Calendar</a>
+    <a href="index.html#howto">Get Started</a>
+  </nav>
+  <a class="nav__cta" href="index.html#get">Start</a>
+</header>
+
+<main id="top">
+
+  <section class="subhero reveal">
+    <span class="tag">Privacy</span>
     <h1>Privacy Policy for My Shortcuts</h1>
-    <p>Last updated: June 22, 2026</p>
+    <p class="lede">Your workspace data is stored in your browser, not on developer servers.</p>
+  </section>
+
+  <section class="legal reveal">
+    <p class="legal__updated">Last updated: June 22, 2026</p>
     <p>
       My Shortcuts is a browser extension that provides a desktop-style workspace for web
       shortcuts, folders, sticky notes, media players, user-created mini-apps, and calendar
@@ -98,9 +109,27 @@
     <h2>Contact</h2>
     <p>
       Support:
-      <a href="https://github.com/koyama0603/My-Shortcuts/issues"
-        >https://github.com/koyama0603/My-Shortcuts/issues</a
-      >
+      <a href="https://github.com/koyama0603/My-Shortcuts/issues">https://github.com/koyama0603/My-Shortcuts/issues</a>
     </p>
-  </body>
+
+    <p style="margin-top:36px"><a class="pagebtn pagebtn--back" href="index.html">
+      <span class="pagebtn__arrow" aria-hidden="true">←</span>
+      <span class="pagebtn__ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="14" rx="1.5"/><rect width="7" height="7" x="3" y="14" rx="1.5"/></svg></span>
+      <span class="pagebtn__label"><span class="pagebtn__eyebrow">Back</span><span class="pagebtn__main">Features</span></span>
+    </a></p>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__brand">
+    <img src="assets/logo.png" alt="" width="22" height="22" />
+    <span>My Shortcuts</span>
+  </div>
+  <p>Your own desktop, right in your browser.</p>
+  <p class="foot__legal"><a href="privacy-policy-en.html">Privacy Policy</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
