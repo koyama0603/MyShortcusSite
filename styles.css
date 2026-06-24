@@ -179,9 +179,11 @@ section { padding: clamp(64px, 9vw, 120px) clamp(18px, 4vw, 40px); scroll-margin
 .videosec__player { max-width: 940px; margin: 0 auto; }
 .videosec__player .frame { padding: 0; line-height: 0; }
 .videosec__player .frame:hover { transform: none; box-shadow: var(--shadow); }
-.videosec__player video {
+.videosec__player video,
+.videosec__player iframe {
   display: block; width: 100%; border-radius: inherit; background: #0b1622;
 }
+.videosec__player iframe { aspect-ratio: 16 / 9; height: auto; border: 0; }
 .videosec__credit { margin: 14px 0 0; font-size: 0.7rem; color: var(--muted); opacity: 0.62; line-height: 1.5; }
 
 /* ============ cards ============ */
@@ -333,7 +335,7 @@ section { padding: clamp(64px, 9vw, 120px) clamp(18px, 4vw, 40px); scroll-margin
 }
 .get__inner img { margin: 0 auto 18px; border-radius: 16px; }
 .get__inner p { color: var(--muted); }
-.get__actions { margin: 26px 0 10px; }
+.get__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 26px 0 10px; }
 .get__steps { font-size: 0.92rem; color: var(--muted); margin: 6px 0 0; }
 
 /* ============ footer ============ */

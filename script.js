@@ -32,14 +32,22 @@
   items.forEach((el) => io.observe(el));
 })();
 
-// "動画で見る" chip → start playback (with sound; click is a user gesture).
+// "動画で見る" chip → start playback.
 (() => {
   const trigger = document.getElementById('videoPlay');
   const video = document.querySelector('.videosec video');
-  if (!trigger || !video) return;
+  const iframe = document.querySelector('.videosec iframe');
+  if (!trigger || (!video && !iframe)) return;
   const play = () => {
-    video.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    video.play().catch(() => {});
+    const player = video || iframe;
+    player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (video) {
+      video.play().catch(() => {});
+      return;
+    }
+    const src = new URL(iframe.src);
+    src.searchParams.set('autoplay', '1');
+    iframe.src = src.toString();
   };
   trigger.addEventListener('click', play);
   trigger.addEventListener('keydown', (e) => {
